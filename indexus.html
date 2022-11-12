@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card shadow">
+            <form class="form">
+                <h3 style="margin-left: 240px; color: rgb(247, 0, 255);" class="mt-3">Calculate</h3>
+                <div class="row m-5">
+                    <div class="col-3">
+                        <label for="a1"> Select Month & Year
+                            <input type="month" class="form-control" id="select"></label>
+                            <p class="red" style=color:red; id="myselectErrId"></p>
+                    </div>
+                    <div class="col-3 ml-4 " >
+                        <label for="a2">Enter Day
+                            <input type="number" class="form-control" id="day" autocomplete="off" min="0" max="31"></label>
+                            <p class="red" style=color:red; id="mynumberErrId"></p>
+        
+                    </div>
+                    <div class="col-3  ml-4" >
+                        <label for="a2">Enter Hours
+                            <input type="number" class="form-control" id="hours" autocomplete="off" min="0" max="24"></label>
+                            <p class="red" style=color:red; id="myhoursErrId"></p>
+                    </div>
+        
+                </div>
+                <div class="row m-5 ml-4">
+                    <div class="col-3">
+                        <label for="a1">Enter Minutes
+                            <input type="number" class="form-control" id="Minutes" min="0" max="60"></label>
+                            <p class="red" style=color:red; id="myminutesErrId"></p>
+        
+                    </div>
+                    <div class="col-3  ml-4">
+                        <label for="a2">Enter Second
+                            <input type="number" class="form-control" id="Second" autocomplete="off" min="0" max="60"></label>
+                            <p class="red" style=color:red; id="mySecondErrId"></p>
+        
+                    </div>
+                    <div class="col-3  ml-4">
+                        <label for="a2">Enter Mili-Second
+                            <input type="number" class="form-control" id="Mili_Second" autocomplete="off" min="0" max="1000"></label>
+                            <p class="red" style=color:red; id="myml_scecondErrId"></p>
+        
+                    </div>
+                  
+                </div>
+                <div class="row" style="margin-left: 280px;">
+                    <div class="mt-4"> <button type="button" class="btn btn-success btn-sm-2"
+                            onclick="calculatedate()">Calculate</button></div>
+        
+                </div>
+                <div class="row m-5 mb-5">
+                    <div class="col-12">
+                        <p id="output"></p>
+        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+   <script src="user.js"></script>
+</body>
+
+</html>
